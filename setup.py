@@ -11,8 +11,9 @@ setup(
     description="A modular toolkit for molecular fragment swapping and chimeric structure generation",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/MolSwapper",
-    packages=find_packages(),
+    url="https://github.com/ayoubriad1/MolSwapper",
+    packages=find_packages(where="src"),
+    package_dir={"": "src"},
     classifiers=[
         "Programming Language :: Python :: 3",
         "Programming Language :: Python :: 3.9",
@@ -32,7 +33,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "molswapper=MolSwapper.main:main",
+            "molswapper=molswapper.main:main",
         ],
     },
 )

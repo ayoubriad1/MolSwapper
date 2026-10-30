@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setup(
     name="MolSwapper",
-    version="1.0.0",
+    version="1.1.0",
     author="Ayoub",
     author_email="t61199988@gmail.com",
     description="A modular toolkit for molecular fragment swapping and chimeric structure generation",

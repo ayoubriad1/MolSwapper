@@ -5,6 +5,23 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.0] - 2026-10-30
+
+### Added
+- Flask web console: single-page UI, 3Dmol.js rendering, JSON endpoint `/api/swap`
+- Core test suite: 29 tests in nine classes, run in CI across Python 3.9 to 3.13
+- `tests/conftest.py` so `pytest tests/` works in a fresh checkout without installing
+
+### Changed
+- Dependencies pinned exactly (`rdkit==2025.03.3`, `Pillow==11.2.1`, `Flask==3.1.3`, `pytest==9.1.1`) instead of open ranges
+
+### Fixed
+- CI installed requirements but never the package, so every job failed on `import molswapper`
+- CI coverage target named `MolSwapper`; the package is `molswapper`
+- `tests/test_basic.py.py` had a double extension and aborted pytest collection
+
+---
+
 ## [1.0.0] - 2026-05-14
 
 ### Added
@@ -40,9 +57,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Planning for Future Releases
 
-### [1.1.0] - Planned
-- Unit tests and integration tests
-- Test coverage reporting
+### [1.2.0] - Planned
 - Performance optimizations for large libraries
 - Additional filtering options
 - Custom fragmentation callbacks

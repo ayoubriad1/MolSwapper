@@ -26,7 +26,7 @@ setup(
         "Intended Audience :: Science/Research",
         "Topic :: Scientific/Engineering :: Chemistry",
     ],
-    python_requires=">=3.9",
+    python_requires=">=3.10",
     install_requires=[
         "rdkit>=2023.09.1",
         "Pillow>=10.0.0",

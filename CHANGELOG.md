@@ -9,7 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - Flask web console: single-page UI, 3Dmol.js rendering, JSON endpoint `/api/swap`
-- Core test suite: 29 tests in nine classes, run in CI across Python 3.9 to 3.13
+- Core test suite: 29 tests in nine classes, run in CI across Python 3.10 to 3.13
 - `tests/conftest.py` so `pytest tests/` works in a fresh checkout without installing
 
 ### Changed
